@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE " />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE " />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/paperman"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Barrido"
+            android:configChanges="orientation"
+            android:label="Barrido"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".Ubicacion"
+            android:configChanges="orientation"
+            android:label="Cambiar Ubicación"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".LecturaBarrido"
+            android:configChanges="orientation"
+            android:label="Barrido"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".TotalUbicacion"
+            android:configChanges="orientation"
+            android:label="Informe Ubicación"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".LecturaLoteo"
+            android:configChanges="orientation"
+            android:label="Loteo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".Revision"
+            android:configChanges="orientation"
+            android:label="Revisión"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".SalidaMercaderia"
+            android:configChanges="orientation"
+            android:label="Salida de Mercaderia"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".CargaMaestro"
+            android:configChanges="orientation"
+            android:label="Cargar Maestro"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".Login"
+            android:configChanges="orientation"
+            android:label="Acceso"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".BorrarRegistro"
+            android:configChanges="orientation"
+            android:label="Borrar Registro"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".BorrarInventario"
+            android:configChanges="orientation"
+            android:label="Borrar Inventario"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".GenerarArchivo"
+            android:configChanges="orientation"
+            android:label="Generar Archivo Inventario"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".EditarCantidad"
+            android:configChanges="orientation"
+            android:label="Editar Cantidad"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity android:name=".ActivarAbiCap"
+            android:configChanges="orientation"
+            android:label="Activar Licencia"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity android:name=".Miscelaneos"
+            android:configChanges="orientation"
+            android:label="Miscelaneos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+        <activity
+            android:name=".Ingresar_Producto"
+            android:configChanges="orientation"
+            android:label="Ingresar Productos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:inputType="text"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="@string/autorizaci_n"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Ingresar contraseña:" />
+
+    <EditText
+        android:id="@+id/passwordMisc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="25sp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/btnCancelarDialogMisc"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:backgroundTintMode="add"
+            android:shadowColor="#00FFFFFF"
+            android:text="Cancelar"
+            android:textColor="#FF4081"
+            android:textColorHint="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/btnIngresarDialogMisc"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="70dp"
+            android:backgroundTint="#00FFFFFF"
+            android:backgroundTintMode="add"
+            android:shadowColor="#00FFFFFF"
+            android:text="Ingresar"
+            android:textColor="#FF4081"
+            android:textColorHint="#00FFFFFF" />
+    </LinearLayout>
+
+
+</LinearLayout>

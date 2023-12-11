@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ubicacion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.camilodesarrollo.abicap.Ubicacion">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Ubicación Actual"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/tvUbicacionActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView2"
+
+        android:layout_marginTop="10dp"
+        android:text="SxxCxxPxxAxx"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUbicacionActual"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="113dp"
+        android:text="Nueva Ubicación"
+        android:textSize="20sp"
+        android:textStyle="normal|bold" />
+
+    <EditText
+        android:id="@+id/edNuevaUbicacion"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="50dp"
+        android:ems="12"
+        android:hint="SxxCxxPxxAxx"
+        android:inputType="text"
+        android:maxLength="12" />
+
+    <Button
+        android:id="@+id/btnGuandarNuevaUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edNuevaUbicacion"
+        android:layout_alignEnd="@+id/edNuevaUbicacion"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="117dp"
+        android:background="@drawable/botonverde"
+        android:text="Guardar"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:id="@+id/btnMenuPrincipalLoteo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/botonazul"
+        android:text="Atrás"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>
